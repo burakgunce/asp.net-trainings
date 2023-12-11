@@ -1,0 +1,35 @@
+﻿#Students{
+    border:1px solid navy;
+    width:100;
+    background-color:lightgray;
+    font-weight:bold;
+    font-family:Calibri;
+}
+
+#Students th, #Students tr{
+    padding:6px;
+}
+
+#Students th{
+    background-color:floralwhite;
+    padding-top:20px;
+    padding-bottom:20px;
+    text-align:left;
+    color:rebeccapurple;
+}
+
+#Students tr{
+    color:palegoldenrod;
+}
+
+#Students tr:nth-child(even){
+    background-color:lightblue;
+    //satır numarası cıft olanların arka planını degıstırme
+}
+
+#Students tbody tr:hover{
+    color:white;
+    background-color:purple;
+    //tr olup tbody ıcınde olup ıd sı students olanların uzerıne gelınce renklerını degıstırme
+}
+

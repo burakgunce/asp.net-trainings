@@ -1,0 +1,48 @@
+﻿.nav{
+    text-decoration:none;
+    color:purple;
+    background-color:lightcoral;
+    font-family:Bahnschrift;
+    font-size:large;
+}
+
+li{
+    display:inline-block;
+}
+
+a{
+    text-decoration:none;
+    color:deepskyblue;
+}
+
+a:hover{
+    color:red;
+}
+
+.main-container{
+    width:800px;
+    height:1000px;
+    background-color:aliceblue;
+    font-family:'Poor Richard';
+    font-size:22pt;
+    color:white;
+}
+
+#header{
+    width:800px;
+    height:200px;
+    background-color:cadetblue;
+    float:left;
+    text-align:center;
+    line-height:200px;
+}
+
+#sidebar{
+    width:200px;
+    height:800px;
+    background-color:lightsteelblue;
+    float:left;
+    text-align:center;
+}
+
+
