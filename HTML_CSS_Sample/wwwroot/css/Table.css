@@ -33,3 +33,16 @@
     //tr olup tbody ıcınde olup ıd sı students olanların uzerıne gelınce renklerını degıstırme
 }
 
+button.btn:active{
+    background-color:navy;
+    color:lightpink;
+    //buton classınaait btn class isimli active olunca rengını degıstırmek
+}
+
+li a {
+    display:block;
+    text-align:center;
+    // list ıcındekı a ları etkıler
+}
+
+
