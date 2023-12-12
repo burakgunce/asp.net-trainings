@@ -5,7 +5,9 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTML5_Sample", "HTML5_Sample\HTML5_Sample.csproj", "{6F7C286C-F0F7-4305-8C9A-BB453DC49308}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTML_CSS_Sample", "HTML_CSS_Sample\HTML_CSS_Sample.csproj", "{71B64649-5192-4977-A2A2-2F5CA707BAB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTML_CSS_Sample", "HTML_CSS_Sample\HTML_CSS_Sample.csproj", "{71B64649-5192-4977-A2A2-2F5CA707BAB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JavaScriptSample", "JavaScriptSample\JavaScriptSample.csproj", "{7B8068E4-72D2-4F39-9BB4-7555E51C38DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{71B64649-5192-4977-A2A2-2F5CA707BAB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71B64649-5192-4977-A2A2-2F5CA707BAB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71B64649-5192-4977-A2A2-2F5CA707BAB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B8068E4-72D2-4F39-9BB4-7555E51C38DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B8068E4-72D2-4F39-9BB4-7555E51C38DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B8068E4-72D2-4F39-9BB4-7555E51C38DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B8068E4-72D2-4F39-9BB4-7555E51C38DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

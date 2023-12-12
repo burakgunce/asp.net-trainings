@@ -45,4 +45,13 @@ li a {
     // list ıcındekı a ları etkıler
 }
 
+@media(max-width:900px){
+    .nav-list{
+        display=none;
+    }
+    .mobile-list{
+        display:block;
+        transform:translateX(100%);
+    }
+}
 
