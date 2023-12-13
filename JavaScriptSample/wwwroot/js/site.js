@@ -117,3 +117,44 @@ console.log(condition);
 
 // != !==   iki eşittir oldugunda tipi de karsılastırıyo '23' ve 23
 
+//if statement
+if (3 > 5)
+    console.log('3 buyuktur 5');
+
+//if else kullanımı
+var age = 45
+if (age > 45) {
+    console.log('45 yas ve ustu');
+}
+else if (age = 45) {
+    console.log('yas 45');
+}
+else {
+    console.log('45 yas altı');
+}
+
+//switch casemantıgı aynı
+//turnary if mantıgı aynı
+
+//for loop c# ile aynı
+//while loop c# ile aynı
+//do-while loop c# ile aynı
+
+//functions
+function add() {
+    console.log('toplama fonksıyonu');
+}
+
+add();
+
+function multiple(n) {
+    console.log('girilen sayının iki katı' + (n * 2));
+}
+
+function multiple(x, y) {
+    console.log(x * y);
+    return x * y;
+}
+
+
+
