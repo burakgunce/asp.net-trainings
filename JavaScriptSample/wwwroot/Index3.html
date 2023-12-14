@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>form tasarımı</title>
+</head>
+<body>
+
+    <form>
+        <table>
+            <tr>
+                <th>etıket(tag)</th>
+                <th>kontrol(ınput)</th>
+                <th>acıklama</th>
+                <th>uyarı</th>
+            </tr>
+            <tr>
+                <td>kullanıcı adı : </td>
+                <td><input type="text" id="txtKullaniciAd" name="txtKullaniciAdi"/></td>
+                <td id="txtKullaniciAciklama"></td>
+                <td id="txtKullaniciUyari"></td>
+            </tr>
+            <tr>
+                <td>Şifre</td>
+                <td><input type="password" id="passwordId" name="txtPassword" onchange="UzunlukHesapla()"/></td>
+                <td id="txtPasswordkAciklama"></td>
+                <td id="txtPasswordUyari"></td>
+            </tr>
+            <tr>
+                <td>Aktif Kullanıcı : </td>
+                <td><input type="checkbox" id="checkId" name="chkActive"/></td>
+                <td id="chkAktifKullaniciAciklama"></td>
+                <td id="chkAktifKullaniciUyari"></td>
+            </tr>
+            <tr>
+                <td>Renk : </td>
+                <td>
+                    Mavi : <input type="radio" name="optRenk" value="Blue" />
+                    Yeşil : <input type="radio" name="optRenk" value="Green" />
+                    Kırmızı : <input type="radio" name="optRenk" value="Red" />
+                </td>
+                <td id="arkaPlan"></td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
