@@ -6,7 +6,7 @@
 </head>
 <body>
 
-    <form>
+    <form onsubmit="return ValidateForm()">
         <table>
             <tr>
                 <th>etıket(tag)</th>
@@ -23,7 +23,7 @@
             <tr>
                 <td>Şifre</td>
                 <td><input type="password" id="passwordId" name="txtPassword" onchange="UzunlukHesapla()"/></td>
-                <td id="txtPasswordkAciklama"></td>
+                <td id="txtPasswordkAciklama">KArakter Sayısı : <span id="KarakterSayisi"></span></td>
                 <td id="txtPasswordUyari"></td>
             </tr>
             <tr>
@@ -42,8 +42,42 @@
                 <td id="arkaPlan"></td>
                 <td></td>
             </tr>
+            <tr>
+                <td>Dosya Seç : </td>
+                <td><input type="file" id="fileId" name="fileYukle" /></td>
+                <td id="DosyaAdi"></td>
+                <td id="DosyaTipi"></td>
+            </tr>
+            <tr>
+                <td>Notlar : </td>
+                <td>
+                    <textarea id="txtAreaId" name="txtNotlar">
+                        1.Not satırı
+                        2.Not satırı
+                    </textarea>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ay : </td>
+                <td>
+                    <select id="selectId" name="cmbAy">
+                        <option>Ocak</option>
+                        <option>Şubat</option>
+                        <option>Mart</option>
+                        <option>Nisan</option>
+                    </select>
+                </td>
+                <td id="cmbAyAciklama"></td>
+                <td></td>
+            </tr>
         </table>
+        <button type="button" id="buttonId" name="btnSample">Sample</button>
+        <button type="submit" id="submitId" name="btnSubmit">Kaydet</button>
     </form>
+
+    <script src="js/form.js"></script>
 
 </body>
 </html>
