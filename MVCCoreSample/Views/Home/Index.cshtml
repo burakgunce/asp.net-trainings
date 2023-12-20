@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<h1>Razor View Engine</h1>
+<h2>Razor View Engine Kullanımı</h2>
+
+@{
+    string firstName = "John";
+    string lastName = "Doe";
+    int age = 30;
+}
+
+<br />
+
+<p><b>razor vıe2 engıne ıle degısken cagırma</b></p>
+<p><b>@firstName @lastName - @age</b></p>
+<hr />
+<h2>Karar yapıları</h2>
+@{
+    int number = 15;
+}
+@{
+    if (number < age)
+    {
+        <span>Sayı Degeri : (<b>@number</b>), yas degerınden (@age) kucuktur</span>
+    }
+    else if (number > age)
+    {
+        <span>Sayı Degeri : (<b>@number</b>), yas degerınden (@age) buyuktur</span>
+    }
+    else
+    {
+        <span>Sayı Degeri : (<b>@number</b>), yas degerıne (@age) esıttır</span>
+    }
+}
+
+<br />
+<hr />
+<h2>donguler ve koleksıyonlar</h2>
+@{
+    string[] names = {"aaaa", "bbbb", "cccc" };
+    string surname = "dddd";
+}
+
+<h6>For dongusu</h6>
+
+@for (int i = 0; i < names.Length; i++)
+{
+    <p>@names[i] @surname</p>
+}
+
+<h6>Foreach</h6>
+@foreach (var item in names)
+{
+    <li>@item @surname</li>
+}
+
+<br /><hr />
+
+<h2>turnary ıf kullanımı</h2>
+@(11>10 ? "true ıse yazılacak " : "false ise yazılacak");
