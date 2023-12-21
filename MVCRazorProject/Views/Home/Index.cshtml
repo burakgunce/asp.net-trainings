@@ -1,0 +1,93 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!--ısım soy ısım ve yas degerlerı olsun. bunlara deger ata bunları ekranda goster-->
+@{
+    string isim = "burak";
+    string soyisim = "gunce";
+    int yas = 23;
+}
+
+<p>@isim @soyisim - @yas</p>
+
+<!--yası 20 den kucuk ise yası 20 den kucuktur degılse yası 20 den buyuktur yazsın-->
+@{
+    if (yas < 20)
+    {
+        <p>yas 20 den kucuk</p>
+    }
+    else if (yas > 20)
+    {
+        <p>yas 20 den buyuk</p>
+    }
+}
+
+<!--ısımler ve soy ısımler arrayı olsun ıclerınde 5 er taneolsun ve bunları yan yana gostersın-->
+@{
+    string[] isimler = { "burak", "talha", "omer", "altay", "ogulcan" };
+    string[] soyisimler = { "gunce", "yalcın", "yıldız", "akyol", "unluturk" };
+
+    for (int i = 0; i < isimler.Length; i++)
+    {
+        <p>@isimler[i] @soyisimler[i]</p>
+    }
+}
+
+@* @{
+    for (int i = 0; i < isimler.Length;)
+    {
+        <table class="table table-striped table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>@isimler[i]</td>
+                    <td>@soyisimler[i]</td>
+                    @i++;
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>@isimler[i]</td>
+                    <td>@soyisimler[i]</td>
+                    @i++;
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>@isimler[i]</td>
+                    <td>@soyisimler[i]</td>
+                    @i++;
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>@isimler[i]</td>
+                    <td>@soyisimler[i]</td>
+                    @i++;
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>@isimler[i]</td>
+                    <td>@soyisimler[i]</td>
+                    @i++;
+                    
+                    
+                </tr>
+            </tbody>
+        </table>
+    }
+    
+} *@
+
+<!--for da sadece içine tek bir th tr falan koysan yeter-->
+
+
+
+
+
