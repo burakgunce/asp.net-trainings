@@ -1,0 +1,13 @@
+﻿@model School
+@{
+    ViewData["Title"] = "Index";
+}
+<form asp-action="Index" asp-controller="School" method="post">
+    <div>
+        <input type="text" asp-for="Id" />
+    </div>
+    
+    <input type="text" asp-for="Ad"/>
+    <input type="text" asp-for="Sehir"/>
+    <button type="submit">Submit</button>
+</form>
