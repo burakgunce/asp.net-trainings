@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "Ürün Sat";
+}
+
+<h1>Urun Sat</h1>
+
+<form asp-action="UrunSat" asp-controller="Siparis" method="post">
+    <div class="form-group">
+        <label>Urun Id</label>
+        <input type="text" name="UrunId" />
+    </div>
+    <div class="form-group">
+        <label>Urun Adı</label>
+        <input type="text" name="UrunAdi" />
+    </div>
+    <div class="form-group">
+        <label>Urun Fiyatı</label>
+        <input type="text" name="UrunFiyati" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Ürünü Sat" class="btn btn-outline-success" />
+    </div>
+
+</form>

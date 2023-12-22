@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Ornek Controller Index Action";
+}
+
+<h1>Ornek --> Index</h1>
+<div class="justify-content-center">
+    <h1 class="btn btn-danger">@ViewBag.GetDate</h1>
+    <br />
+</div>
+
+<div class="justify-content-center">
+    <ul class="list-group">
+        @foreach (var name in ViewBag.Names)
+        {
+            <li class="list-ite">
+                <a href="#" class="nav-link">@name</a>
+            </li>
+        }
+    </ul>
+</div>
+
+
+<div class="justify-content-center">
+    <span class="btn btn-primary">@ViewData["Hour"]</span>
+</div>
+
+<div class="justify-content-center">
+    <span class="btn btn-secondary">@TempData["Day"]</span>
+</div>
+
+<div class="justify-content-center">
+    <a asp-controller="Ornek" asp-action="Index2">Index 2</a>
+</div>
+
+

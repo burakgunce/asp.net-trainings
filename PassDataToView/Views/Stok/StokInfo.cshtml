@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "stok ınfo";
+}
+
+<div class="justify-content-center">
+    <div class="card">
+        <div class="card-header">
+            <p class="text-center">satılan urun bılgılerı</p>
+        </div>
+        <div class="card-body">
+            <dl>
+                <dt>Ürün Id : </dt>
+                <dd>@ViewBag.UrunId</dd>
+
+                <dt>Ürün Adı : </dt>
+                <dd>@ViewBag.UrunAdi.ToString()</dd>
+
+                <dt>Ürün Fiyatı : </dt>
+                <dd>@ViewBag.UrunFiyati</dd>
+
+
+            </dl>
+        </div>
+    </div>
+</div>
