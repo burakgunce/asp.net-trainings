@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VeriTransferi", "VeriTransf
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PassDataToView", "PassDataToView\PassDataToView.csproj", "{106A6A6B-6AC7-4448-AEBA-6DF82E3D41D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCApp2", "MVCApp2\MVCApp2.csproj", "{A2FA64AF-9DDB-4635-AA5F-AB205E3F2013}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCApp2", "MVCApp2\MVCApp2.csproj", "{A2FA64AF-9DDB-4635-AA5F-AB205E3F2013}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCCore_Model_ViewModel", "MVCCore_Model_ViewModel\MVCCore_Model_ViewModel.csproj", "{A86DD9DB-2E5E-45DA-8280-5AB2C75A5E0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{A2FA64AF-9DDB-4635-AA5F-AB205E3F2013}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2FA64AF-9DDB-4635-AA5F-AB205E3F2013}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2FA64AF-9DDB-4635-AA5F-AB205E3F2013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A86DD9DB-2E5E-45DA-8280-5AB2C75A5E0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A86DD9DB-2E5E-45DA-8280-5AB2C75A5E0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A86DD9DB-2E5E-45DA-8280-5AB2C75A5E0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A86DD9DB-2E5E-45DA-8280-5AB2C75A5E0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

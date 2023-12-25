@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Personel>
+
+@{
+    ViewData["Title"] = "Personel List - Index";
+}
+
+<h1>Personel Listesi</h1>
+
+<div>
+    <a asp-controller="Personel" asp-action="Create">Yeni Personel</a>
+</div>
+<div class="row" style="margin-top:50px;">
+    <div class="col-lg-8">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>Personel Id</tr>
+                <tr>Personel Name</tr>
+                <tr>Birth Date</tr>
+                <tr>Department</tr>
+                <tr>Working Type</tr>
+            </thead>
+            <tbody>
+                @foreach (Personel item in Model)
+                {
+                    <tr>
+                        <td>@item.PersonelId</td>
+                        <td>@item.Name</td>
+                        <td>@item.BirthDate</td>
+                        <td>@item.Department</td>
+                        <td>@item.WorkingType.GetType().GetMember(item.WorkingType.ToString()).First().CustomAttributes.First().NamedArguments.First().TypedValue.ToString()</td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">
+                        <p>bu lıste tum calısanların lıstesıdır</p>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>

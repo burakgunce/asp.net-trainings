@@ -1,0 +1,59 @@
+﻿@using MVCCore_Model_ViewModel.Models.VM;
+@using MVCCore_Model_ViewModel.Models.Enums;
+@model CreatePersonelVM
+
+@{
+    ViewData["Title"] = "Create New Personel";
+}
+<div>
+    <a asp-controller="Personel" asp-action="Index">Personel Listesi</a>
+</div>
+
+<h1>yenı personel ekle</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" asp-controller="Personel" method="post">
+            <div asp-validation-summary="All" class="text-danger">
+
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Personel.PersonelId" class="form-control">Personel Id</label>
+                <input asp-for="@Model.Personel.PersonelId" class="form-control" />
+                <span asp-validation-for="@Model.Personel.PersonelId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Personel.Name" class="form-control">Personel Name</label>
+                <input asp-for="@Model.Personel.Name" class="form-control" />
+                <span asp-validation-for="@Model.Personel.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Personel.BirthDate" class="form-control">Birth Date</label>
+                <input asp-for="@Model.Personel.BirthDate" class="form-control" />
+                <span asp-validation-for="@Model.Personel.BirthDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Personel.Department" class="form-control">Departman</label>
+                <select asp-for="<@Model.Personel.Department" class="form-control">
+                    <option>lutfen departman secınız</option>
+                    @foreach (Department item in Model.Deparments)
+                    {
+                        <option value="@item.DepartmentId">@item.DepartmentName</option>
+                    }
+                </select>
+                <span asp-validation-for="@Model.Personel.Department" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Personel.WorkingType" class="form-control">calısma tıpı</label>
+                <select asp-for="@Model.Personel.WorkingType" class="form-control" asp-items="@Html.GetEnumSelectList<WorkingType>()">
+                    <option>lutfen calısma tıpı secınız</option>
+                </select>
+                <span asp-validation-for="@Model.Personel.WorkingType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Yeni Personel Ekle" class="btn btn-primary" />
+            </div>
+
+        </form>
+    </div>
+</div>
