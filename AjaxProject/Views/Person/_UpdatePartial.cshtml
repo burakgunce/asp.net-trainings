@@ -1,0 +1,44 @@
+﻿@model Person
+
+<label>First Name</label>
+<input type="text" asp-for="FirstName" id="updateFirstName"/>
+<br />
+
+<label>Last Name</label>
+<input type="text" asp-for="LastName" id="updateLastName" />
+<br />
+
+<label>Birth Date</label>
+<input type="date" asp-for="BirthDate" id="updateBirthDate" />
+<br />
+
+<label>Age</label>
+<input type="number" asp-for="Age" id="updateAge" />
+<br />
+
+<button class="btn btn-outline-success" onclick="UpdatePerson(@Model.Id)">Update</button>
+
+<h3>ıkıncı yontem</h3>
+
+<form id="updateForm">
+    <input type="hidden" asp-for="Id"/>
+    <label>First Name</label>
+    <input type="text" asp-for="FirstName"  />
+    <br />
+
+    <label>Last Name</label>
+    <input type="text" asp-for="LastName"  />
+    <br />
+
+    <label>Birth Date</label>
+    <input type="date" asp-for="BirthDate" i />
+    <br />
+
+    <label>Age</label>
+    <input type="number" asp-for="Age"  />
+    <br />
+
+    <button class="btn btn-outline-success" onclick="UpdatePerson2()">Update</button>
+</form>
+
+

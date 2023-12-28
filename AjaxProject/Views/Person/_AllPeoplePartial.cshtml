@@ -1,0 +1,28 @@
+﻿@model List<Person>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Birth Date</th>
+                <th>Age</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Person person in Model)
+            {
+                <tr>
+                    <td>@person.FirstName</td>
+                    <td>@person.LastName</td>
+                    <td>@person.BirthDate.ToShortDateString()</td>
+                    <td>@person.Age</td>
+                    <td><a class="btn btn-warning" onclick="GetUpdatePage(@person.Id)">Update</a></td>
+                    <td><a class="btn btn-danger" onclick="DeletePerson(@person.Id)">Delete</a></td>
+                </tr>
+            }
+        </tbody>
+        
+    </table>
