@@ -11,22 +11,45 @@
     $(document).ready(function() 
     {
         num1 = 100;
-        num2 = 50;
+        num2 = 4;
 
         $.ajax({
             type : "POST",
-            url : "@Url.Action("Add")",
-            data: {number1:num1, number2:num2},
-            dataType : "text",
-            succes: function (msg) {
-                alert(msg);
-                console.log(msg);
+            url = "@Url.Action("Calculate")",
+            data: { number1: num1, number2: num2 },
+            dataType : "json",
+            succes: function(msg){
+                //alert(msg);
+                var jsonData = JSON.stringify(msg);
+                var obj = JSON.parse(jsonData);
+                console.log(obj);
+                console.log(obj.add);
+                console.log(obj.substract);
+                console.log(obj.multiplier);
+                console.log(obj.divide);
+                console.log(jsonData);
             },
-            error: function (req, status, error) {
-                alert(msg);
-                console.log(msg);
+            error: function(req, status, error){
+                alert(error);
+                console.log(error);
             }
         });
+        
+        
+        // $.ajax({
+        //     type : "POST",
+        //     url : "@Url.Action("Add")",
+        //     data: {number1:num1, number2:num2},
+        //     dataType : "text",
+        //     succes: function(msg){
+        //         alert(msg);
+        //         console.log(msg);
+        //     },
+        //     error: function(req, status, error){
+        //         alert(error);
+        //         console.log(error);
+        //     }
+        // });
 
     });
 </script>

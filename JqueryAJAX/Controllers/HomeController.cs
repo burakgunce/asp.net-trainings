@@ -18,6 +18,16 @@ namespace JqueryAJAX.Controllers
             int total = number1 + number2;
             return total;
         }
+
+        public CalculateNumbers Calculate (int  number1, int number2)
+        {
+            CalculateNumbers calculate = new CalculateNumbers ();
+            calculate.Add = number1 + number2;
+            calculate.Substract = number1 - number2;
+            calculate.Multiplier = number1 * number2;
+            calculate.Divide = number1 / number2;
+            return calculate;
+        }
         public IActionResult Index()
         {
             return View();
