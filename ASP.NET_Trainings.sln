@@ -37,6 +37,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AjaxProject", "AjaxProject\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validation", "Validation\Validation.csproj", "{0287CC93-4A5A-40CF-A530-89B160E5998D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AreaSample", "AreaSample\AreaSample.csproj", "{CE456E3E-CAC2-46BF-867B-E98DD57E5680}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{0287CC93-4A5A-40CF-A530-89B160E5998D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0287CC93-4A5A-40CF-A530-89B160E5998D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0287CC93-4A5A-40CF-A530-89B160E5998D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE456E3E-CAC2-46BF-867B-E98DD57E5680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE456E3E-CAC2-46BF-867B-E98DD57E5680}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE456E3E-CAC2-46BF-867B-E98DD57E5680}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE456E3E-CAC2-46BF-867B-E98DD57E5680}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
