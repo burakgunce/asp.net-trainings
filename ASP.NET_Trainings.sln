@@ -33,7 +33,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActionResultTypes", "Action
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JqueryAJAX", "JqueryAJAX\JqueryAJAX.csproj", "{DEB99B18-B5ED-48CD-95C0-FDDE974D09E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AjaxProject", "AjaxProject\AjaxProject.csproj", "{758A4B46-2628-4B92-8CB6-043B8A67E07D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AjaxProject", "AjaxProject\AjaxProject.csproj", "{758A4B46-2628-4B92-8CB6-043B8A67E07D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validation", "Validation\Validation.csproj", "{0287CC93-4A5A-40CF-A530-89B160E5998D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{758A4B46-2628-4B92-8CB6-043B8A67E07D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{758A4B46-2628-4B92-8CB6-043B8A67E07D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{758A4B46-2628-4B92-8CB6-043B8A67E07D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0287CC93-4A5A-40CF-A530-89B160E5998D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0287CC93-4A5A-40CF-A530-89B160E5998D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0287CC93-4A5A-40CF-A530-89B160E5998D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0287CC93-4A5A-40CF-A530-89B160E5998D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
