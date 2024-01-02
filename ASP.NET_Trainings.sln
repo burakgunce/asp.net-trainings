@@ -35,9 +35,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JqueryAJAX", "JqueryAJAX\Jq
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AjaxProject", "AjaxProject\AjaxProject.csproj", "{758A4B46-2628-4B92-8CB6-043B8A67E07D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validation", "Validation\Validation.csproj", "{0287CC93-4A5A-40CF-A530-89B160E5998D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Validation", "Validation\Validation.csproj", "{0287CC93-4A5A-40CF-A530-89B160E5998D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AreaSample", "AreaSample\AreaSample.csproj", "{CE456E3E-CAC2-46BF-867B-E98DD57E5680}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AreaSample", "AreaSample\AreaSample.csproj", "{CE456E3E-CAC2-46BF-867B-E98DD57E5680}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateManagement", "StateManagement\StateManagement.csproj", "{95F7F579-FE13-40A7-A595-A8D8ED474DCC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{CE456E3E-CAC2-46BF-867B-E98DD57E5680}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE456E3E-CAC2-46BF-867B-E98DD57E5680}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE456E3E-CAC2-46BF-867B-E98DD57E5680}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95F7F579-FE13-40A7-A595-A8D8ED474DCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95F7F579-FE13-40A7-A595-A8D8ED474DCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95F7F579-FE13-40A7-A595-A8D8ED474DCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95F7F579-FE13-40A7-A595-A8D8ED474DCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

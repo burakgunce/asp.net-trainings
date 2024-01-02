@@ -1,0 +1,26 @@
+﻿@using Microsoft.AspNetCore.Http;
+@{
+    ViewData["Title"] = "Show Session";
+}
+
+<h1>Show Session</h1>
+
+<div class="row justify-content-lg-center">
+    <div class="col-md-6">
+        <div class="card-header">
+            <h3>Çerez Bilgileri</h3>
+        </div>
+        <div class="card-body">
+            <label>Firma Adı : @ViewBag.Firm</label><br />
+            <label>Personel Adı : @ViewBag.PersonName</label><br />
+            <label>Personel Yaşı : @ViewBag.PersoAge</label><br />
+            <label>Personel Mail : @ViewBag.PersonMail</label><br />
+            <label>Personel Role : @ViewBag.PersonRole</label><br />
+        </div>
+        <div class="card-footer">
+            <a class="btn btn-warning btn-block" asp-controller="Cookie" asp-action="Index">Geri Dön</a>
+        </div>
+    </div>
+</div>
+
+@Context.Session.GetString("Firm")
